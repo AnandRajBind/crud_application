@@ -1,0 +1,25 @@
+require('dotenv').config();
+const cors=require("cors")
+
+
+const express =require(express);
+// import express from 'express';
+
+const connectToDb=require('./dbConnection.js')
+
+// Express middleware
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
+app.use(cors());
+
+
+// init connection to db
+connectToDb()
+
+const  app= express();
+
+app.get('/',);
+// export default app;
+module.exports=app;
+
